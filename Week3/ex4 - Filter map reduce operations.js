@@ -4,18 +4,21 @@ let numbers = [1, 2, 3, 4, 5];
 // You need to use the array.filter() function
 function filterEvenNumbers(arr) {
   // TODO - Your code here (1 line)
+ return arr.filter(num => num % 2 === 0);
 }
 
 // Function to map array elements to their squared values
 // You need to use the array.map() function
 function squareNumbers(arr) {
   //  TODO - Your code here (1 line)
+  return arr.map(num => num*num);
 }
 
 // Function to compute the sum of array elements
 // You need to use the array.reduce() function
 function sumArray(arr) {
   //  TODO - Your code here (1 line)
+  return arr.reduce((total, num) => total + num);
 }
 
 console.log("Even numbers:", filterEvenNumbers(numbers)); // [2, 4]
