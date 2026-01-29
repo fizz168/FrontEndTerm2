@@ -14,8 +14,9 @@
 let originalArray = [1, 2, 3, 4, 5];
 
 function updateArray(array, index, newValue) {
-  array[index] = newValue;
-  return array;
+  return [
+    ...array.slice(0, index), newValue,...array.slice(index + 1) 
+  ];
 }
 
 let updatedArray = updateArray(originalArray, 2, 10);
