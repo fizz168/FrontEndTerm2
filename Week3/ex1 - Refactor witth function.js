@@ -20,8 +20,12 @@ let shoppingCart = [
 ];
 
 // Calculate total price without using functions
+function calculateTotalPrice(shoppingCart){
 let totalPrice = 0;
 for (let item of shoppingCart) {
   totalPrice += item.price * item.quantity;
 }
-console.log("Total price:", totalPrice);
+return totalPrice;
+}
+const total = calculateTotalPrice(shoppingCart);
+console.log("total prize :" , total);
