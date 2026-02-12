@@ -1,5 +1,6 @@
 function Time() {
-    let date = new Date().toLocaleString() + ""
+    let date = new Date().toLocaleTimeString() + ""
+    
     return(
         <h2>
             {date}

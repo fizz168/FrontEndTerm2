@@ -9,12 +9,14 @@ function App() {
 
   // TODO : You need to implement and call this function in your JSX code
   // Convert the given value in dollars to a value in euro
-  function dollarToEuro(valueInDollars) {}
+  function dollarToEuro(valueInDollars) {
+    return valueDollars * DOLLAR_TO_EURO_RATIO;
+  }
 
   // TODO : You need to implement and call this function in your JSX code
   // Convert the given value in dollars to a value in dong
   function dollarToDong(valueInDollars) {}
-
+return valueDollars * DOLLAR_TO_DONG_RATIO;
   return (
     <main>
       <h1>Device conversions</h1>
@@ -25,11 +27,11 @@ function App() {
 
         {/* TODO This input need to display the value in dongs */}
         <label>Value in Dong</label>
-        <input disabled />
+        <input disabled value={dollarToEuro(valueDollars)} />
 
         {/* TODO This input need to display the value in euros */}
         <label>Value in Euro</label>
-        <input disabled />
+        <input disabled value={dollarToDong(valueDollars)}/>
       </p>
     </main>
   );
