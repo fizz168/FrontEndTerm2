@@ -1,7 +1,7 @@
 function App() {
   return <>
   <header className="head">
-    <h1>Hobby</h1>
+    <h1>My item</h1>
   </header>
   
   
@@ -40,6 +40,18 @@ function App() {
           </p>
         
         </div>
+ <div className="card">
+          <h4>Dum</h4>
+          <small>My daily life</small>
+          <p>
+            Try something you've always been curious about, whether it's
+            painting, cooking, coding, gardening, or playing a musical
+            instrument. Hobbies can be a great way to relax and discover new
+            passions
+          </p>
+        
+        </div>
+
     </div>
 
   </>;
