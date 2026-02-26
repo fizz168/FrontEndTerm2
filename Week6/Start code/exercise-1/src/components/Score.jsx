@@ -1,4 +1,7 @@
+import Static from "./Static";
+
 function Score({ courseName, results }) {
+  
   return (
       <div className="scores">
         <h1>{courseName}</h1>
@@ -20,16 +23,11 @@ function Score({ courseName, results }) {
             ))}
           </tbody>
         </table>
+
+      
       </div>
  
   );
-}
-function Static(results){
-    return(
-        <>
-        
-        </>
-    );
 }
 
 export default Score;
